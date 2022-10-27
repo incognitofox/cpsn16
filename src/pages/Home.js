@@ -12,8 +12,10 @@ const Home = () => {
     const [error, setError] = useState("");
 	const [file, setFile] = useState("");
 	const [rows, setRows] = useState([])
+    const [loading, setLoading] = useState(true);
     	
     var school = state['state']['school']
+    console.log(school)
 
 	useEffect(() => {
 		async function getData() {
@@ -26,26 +28,36 @@ const Home = () => {
 		  const rows = results.data // array of objects
 		  console.log(rows)
 		  setRows(rows)
+          setLoading(false)
     	}
-	 	getData()	
-	}, [])
+        getData()
+	}, [loading])
 
-    var row = rows[0]
-
-    for (var i = 0; i < rows.length; i ++) {
-        if (rows[i]['name'] == school)
-            row = rows[i]
+    function loading_html() {
+        console.log("loading")
+        return(
+            <div className="App-header">Loading</div>
+        );
     }
 
-    console.log(row)
-    return(
-    <div className="App-header">
-        <p>{school}</p>
-        <a href={row['url']}>Link</a>
-        <p>{row['phone']}</p>
-    </div>
+    function show_info(row) {
+        for (var i = 0; i < rows.length; i ++) {
+            if (rows[i]['name'] == school)
+                row = rows[i]
+        }
 
-    );
+        console.log(row)
+        return(
+            <div className="App-header">
+                <p>{school}</p><a href = {row['url']}>Link</a><p>{row['phone']}</p>
+            </div>
+        );
+    }
+    if (loading)
+        return loading_html()
+    else
+        return show_info(rows[0])
+       
 };
 
 export default Home
