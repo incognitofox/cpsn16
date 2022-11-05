@@ -49,7 +49,7 @@ const Home = () => {
         console.log(row)
         return(
             <div className="App-header">
-                <p>{school}</p><a href = {row['url']}>Link</a><p>{row['phone']}</p>
+                <a href={row['url']}>{school}</a><p>{row['phone']}</p>
             </div>
         );
     }
