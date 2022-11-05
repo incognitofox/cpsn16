@@ -6,7 +6,7 @@ import Layout from "./pages/Layout";
 
 function App() {
   return (  
-	<BrowserRouter>
+	<BrowserRouter basename={process.env.URL}>
       <Routes>
         <Route exact path="/" element={<Layout />} />
         <Route path="/home" element={<Home />} />
