@@ -6,6 +6,7 @@ import logo from '../logo.svg'
 const allowedExtensions = ["csv"];
 
 const Home = () => {
+    
     const state  = useLocation();
 
  	const [data, setData] = useState([]);
@@ -50,6 +51,7 @@ const Home = () => {
         return(
             <div className="App-header">
                 <a href={row['url']}>{school}</a><p>{row['phone']}</p>
+                <a href="/calendar"> Calendar </a>
             </div>
         );
     }
@@ -57,7 +59,8 @@ const Home = () => {
         return loading_html()
     else
         return show_info(rows[0])
-       
+    
+    
 };
 
 export default Home
