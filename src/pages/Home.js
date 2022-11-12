@@ -50,8 +50,15 @@ const Home = () => {
         console.log(row)
         return(
             <div className="App-header">
-                <a href={row['url']}>{school}</a><p>{row['phone']}</p>
-                <a href="/calendar"> Calendar </a>
+                <form action={row['url']}>
+                    <button type="submit">{`${school} website`}</button>
+                </form>
+                <form action={`tel:${row['phone']}`}>
+                    <button type="submit">{row['phone']}</button>
+                </form>
+                <form action={"/calendar"}>
+                    <button type="submit"> Event Calendar </button>
+                </form>
             </div>
         );
     }
