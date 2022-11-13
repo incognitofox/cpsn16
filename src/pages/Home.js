@@ -50,8 +50,11 @@ const Home = () => {
         console.log(row)
         return(
             <div className="App-header">
+        
                 <form action={row['url']}>
-                    <button type="submit">{`${school} website`}</button>
+                    
+                    <button class="aaa"type="submit">{`${school} website`}</button>
+                    
                 </form>
                 <form action={`tel:${row['phone']}`}>
                     <button type="submit">{row['phone']}</button>

@@ -16,9 +16,16 @@ const Layout = () => {
     };
     return(
     <div className="App">
-      <header className="App-header">
-        <h1>CPS Network 16</h1>
-          <div>
+      <header className="Home-header">
+        <img src="https://www.cps.edu/globalassets/cps-pages/media/cps-branding/cpslogo_v1_4x4.jpg" alt="CPS16 Logo" width="350"
+  height="350"/>
+        <h1> Welcome to the CPS Network 16 Website! </h1>
+        
+      </header>
+      <div className="Home-bottom">
+          <p> What school do you attend? </p>
+            
+
           <form onSubmit={handleSubmit}>
             <select onChange={handleChange}>
               <option value="AIR FORCE HS">AIR FORCE HS</option>
@@ -37,10 +44,10 @@ const Layout = () => {
               <option value="SPRY HS">SPRY HS</option>
               <option value="TILDEN HS">TILDEN HS</option> 
             </select>
-            <input type="submit" value="Get started" />
+            <input class="Get-started-button" type="submit" value="Get started" />
           </form>
-          </div>
-      </header>
+        </div>
+      
     </div>
 
     );

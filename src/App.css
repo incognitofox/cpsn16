@@ -24,6 +24,53 @@
   color: white;
 }
 
+.Home-header {
+  background-color: #D5ECFA;
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #00339D;
+}
+
+.Home-bottom {
+  background-color: #BCA1EA;
+  min-height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #00339D;
+}
+
+.aaa {
+  border: none;
+
+  height: 110%;
+  width: 100%;
+  background-color: #4CAF50;
+}
+
+.Get-started-button {
+  border: none;
+
+  height: 100%;
+  width: 31%;
+  background-color: #63A1C5;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #FFFFFF;
+}
+
 .App-link {
   color: #61dafb;
 }
