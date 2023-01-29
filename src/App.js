@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import Layout from "./pages/Layout";
 import Calendar from "./pages/Calendar";
 import FAQ from "./pages/FAQ";
-
+import CollegeCareerResources from "./pages/CollegeCareerResources"
 
 function App() {
   return (  
@@ -15,6 +15,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/calendar" element={<Calendar />} />
         <Route path="/FAQ" element={<FAQ />} />`.
+        <Route path="/CollegeCareerResources" element={<CollegeCareerResources />} />`.
       </Routes>
     </BrowserRouter>
   );
