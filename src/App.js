@@ -7,7 +7,7 @@ import Calendar from "./pages/Calendar";
 import FAQ from "./pages/FAQ";
 import CollegeCareerResources from "./pages/CollegeCareerResources"
 import MentalHealthResources from "./pages/MentalHealthResources"
-import AcademicResources from ".pages/AcademicResources"
+import AcademicResources from "./pages/AcademicResources"
 function App() {
   return (  
 	<BrowserRouter basename={process.env.URL}>
