@@ -7,6 +7,7 @@ import Calendar from "./pages/Calendar";
 import FAQ from "./pages/FAQ";
 import CollegeCareerResources from "./pages/CollegeCareerResources"
 import MentalHealthResources from "./pages/MentalHealthResources"
+import AcademicResources from ".pages/AcademicResources"
 function App() {
   return (  
 	<BrowserRouter basename={process.env.URL}>
@@ -14,9 +15,10 @@ function App() {
         <Route exact path="/" element={<Layout />} />
         <Route path="/home" element={<Home />} />
         <Route path="/calendar" element={<Calendar />} />
-        <Route path="/FAQ" element={<FAQ />} />`.
-        <Route path="/CollegeCareerResources" element={<CollegeCareerResources />} />`.
+        <Route path="/FAQ" element={<FAQ />} />
+        <Route path="/CollegeCareerResources" element={<CollegeCareerResources />} />
         <Route path="/MentalHealthResources" element={<MentalHealthResources />} />
+        <Route path="/[AcademicResources]" element={<[AcademicResources] />} />
       </Routes>
     </BrowserRouter>
   );
