@@ -6,7 +6,7 @@ import Layout from "./pages/Layout";
 import Calendar from "./pages/Calendar";
 import FAQ from "./pages/FAQ";
 import CollegeCareerResources from "./pages/CollegeCareerResources"
-
+import MentalHealthResources from "./pages/MentalHealthResources"
 function App() {
   return (  
 	<BrowserRouter basename={process.env.URL}>
@@ -16,6 +16,7 @@ function App() {
         <Route path="/calendar" element={<Calendar />} />
         <Route path="/FAQ" element={<FAQ />} />`.
         <Route path="/CollegeCareerResources" element={<CollegeCareerResources />} />`.
+        <Route path="/MentalHealthResources" element={<MentalHealthResources />} />
       </Routes>
     </BrowserRouter>
   );
