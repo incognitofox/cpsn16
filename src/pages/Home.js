@@ -62,7 +62,7 @@ const Home = () => {
                 <form action={"/calendar"}>
                     <button type="submit"> Event Calendar </button>
                 </form>
-                <form action ={"/mentalhealth"}>
+                <form action ={"/mentalhealthresources"}>
                     <button type="submit"> Mental Health Resources</button>
                 </form>
             </div>
