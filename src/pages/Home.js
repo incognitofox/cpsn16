@@ -16,7 +16,8 @@ const Home = () => {
     const [loading, setLoading] = useState(true);
     	
     var school = state['state']['school']
-    console.log(school)
+    var grade = state['state']['grade']
+    console.log(school,grade)
 
 	useEffect(() => {
 		async function getData() {

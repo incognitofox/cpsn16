@@ -6,13 +6,17 @@ import logo from "../logo.svg";
 const Layout = () => {
     const navigate = useNavigate();
     var school = "AIR FORCE HS";
+    var grade = "9";
     const handleChange = event => {
         school = event.target.value;
+    };
+    const handleGrade = event => {
+        grade = event.target.value;
     };
 
     const handleSubmit = event => {
         console.log(school);
-        navigate("/home", {state :{'school': school}})
+        navigate("/home", {state :{'school': school, 'grade':grade}})
     };
     return(
     <div className="App">
@@ -23,7 +27,7 @@ const Layout = () => {
         
       </header>
       <div className="Home-bottom">
-          <p> What school do you attend? </p>
+          <p> What school do you attend, and which grade are you in? </p>
             
 
           <form onSubmit={handleSubmit}>
@@ -43,6 +47,12 @@ const Layout = () => {
               <option value="RICHARDS HS">RICHARDS HS</option>
               <option value="SPRY HS">SPRY HS</option>
               <option value="TILDEN HS">TILDEN HS</option> 
+            </select>
+            <select onChange={handleGrade}>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
             </select>
             <input class="Get-started-button" type="submit" value="Get started" />
           </form>
