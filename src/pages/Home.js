@@ -16,7 +16,8 @@ const Home = () => {
     const [loading, setLoading] = useState(true);
     	
     var school = state['state']['school']
-    console.log(school)
+    var grade = state['state']['grade']
+    console.log(school,grade)
 
 	useEffect(() => {
 		async function getData() {
@@ -62,7 +63,7 @@ const Home = () => {
                 <form action={"/calendar"}>
                     <button type="submit"> Event Calendar </button>
                 </form>
-                <form action ={"/mentalhealth"}>
+                <form action ={"/mentalhealthresources"}>
                     <button type="submit"> Mental Health Resources</button>
                 </form>
                 <form action ={"/academicresources"}>
