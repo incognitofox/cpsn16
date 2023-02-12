@@ -21,13 +21,20 @@ const Layout = () => {
     return(
     <div className="App">
       <header className="Home-header">
-        <img src="https://www.cps.edu/globalassets/cps-pages/media/cps-branding/cpslogo_v1_4x4.jpg" alt="CPS16 Logo" width="350"
-  height="350"/>
+        <img src="https://cps-ssce-staging.s3.amazonaws.com/images/CPS_HS_NETWORK_16_72dpi.width-500.width-500.png?AWSAccessKeyId=AKIAQUHZIOEIIVHSYQ7A&Signature=uQfIu%2FnBngQBCrPyfYLy8LmxMc4%3D&Expires=1676247714"
+        alt="CPS16 Logo" width="300" height="212"/>
         <h1> Welcome to the CPS Network 16 Website! </h1>
-        
+        <p> We make academic and mental health resources accessible to CPS high school students like you. </p>
+        <form action={"/academicresources"}>
+          <button type="submit"> Academic Resources </button>
+        </form>
+        <form action={"/collegecareerresources"}>
+          <button type="submit"> College & Career Resources </button>
+        </form>
+        <p></p>
       </header>
       <div className="Home-bottom">
-          <p> What school do you attend, and which grade are you in? </p>
+          <p> Looking for more? Select your school and grade: </p>
             
 
           <form onSubmit={handleSubmit}>
