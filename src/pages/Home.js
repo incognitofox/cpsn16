@@ -48,17 +48,33 @@ const Home = () => {
                 row = rows[i]
         }
 
+        var gradetext = ""
+        if (grade == "9") {
+            gradetext = "Freshman";
+        }
+        else if (grade == "10") {
+            gradetext = "Sophomore";
+        }
+        else if (grade == "11") {
+            gradetext = "Junior";
+        }
+        else if (grade == "12") {
+            gradetext = "Senior";
+        }
+
         console.log(row)
         return(
             <div className="App-header">
-        
+                <div dangerouslySetInnerHTML={{__html: `Welcome, ${school} ${gradetext}!`}} />
+                <a href="/"> Not you? Return to home</a>
                 <form action={row['url']}>
-                    
-                    <button class="aaa"type="submit">{`${school} website`}</button>
-                    
+                    <button class="aaa" type="submit">{`${school} website`}</button>
                 </form>
                 <form action={`tel:${row['phone']}`}>
                     <button type="submit">{row['phone']}</button>
+                </form>
+                <form action={"/contact"}>
+                    <button type="submit"> Your Counselors </button>
                 </form>
                 <form action={"/calendar"}>
                     <button type="submit"> Event Calendar </button>
@@ -68,6 +84,9 @@ const Home = () => {
                 </form>
                 <form action ={"/academicresources"}>
                     <button type="submit"> Academic Resources</button>
+                </form>
+                <form action ={"/faq"}>
+                    <button type="submit"> FAQ</button>
                 </form>
             </div>
         );
