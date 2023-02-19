@@ -18,11 +18,17 @@ const MentalHealthResources = () =>{
                 <button type="submit">Email mentalhealth@cps.edu</button>
             </form>
             <h4>Mental Health Phone Resources</h4>
-            <p>National Alliance on Mental Illness (NAMI) Chicago: 1-833-626-4244</p>
-            <p>Substance Abuse and Mental Health Services Administration: 1-800-662-4357</p>
-            <p>National Eating Disorder Association: 1-800-931-2237</p>
-            <p>Trevor Project (LGBTQ+ Support): 1-866-488-7386</p>
-            <p>National Domestic Violence Hotline: 1-800-799-7233</p>
+            <p>National Alliance on Mental Illness (NAMI) Chicago:</p> 
+            <a href="tel:1-833-626-4244">1-833-626-4244</a>
+            
+            <p>Substance Abuse and Mental Health Services Administration:</p>
+            <a href="tel: 1-800-662-4357">1-800-662-4357</a>
+            <p>National Eating Disorder Association:</p>
+            <a href="tel: 1-800-931-2237">1-800-931-2237</a>
+            <p>Trevor Project (LGBTQ+ Support):</p>
+            <a href="tel: 1-866-488-7386">1-866-488-7386</a>
+            <p>National Domestic Violence Hotline:</p>
+            <a href="tel: 1-800-799-7233">1-800-799-7233</a>
 
       </div>  
     )
