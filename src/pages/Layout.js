@@ -21,7 +21,7 @@ const Layout = () => {
     return(
     <div className="App">
       <header className="Home-header">
-        <img src="https://cps-ssce-staging.s3.amazonaws.com/images/CPS_HS_NETWORK_16_72dpi.width-500.width-500.png?AWSAccessKeyId=AKIAQUHZIOEIIVHSYQ7A&Signature=uQfIu%2FnBngQBCrPyfYLy8LmxMc4%3D&Expires=1676247714"
+        <img src="https://www.cps.edu/globalassets/cps-global-media/cps-logos/2022/cps-logo-2022_cpsblue.svg"
         alt="CPS16 Logo" width="300" height="212"/>
         <h1> Welcome to the CPS Network 16 Website! </h1>
         <p> We make academic and mental health resources accessible to CPS high school students like you. </p>
