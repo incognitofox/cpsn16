@@ -31,6 +31,9 @@ const Layout = () => {
         <form action={"/collegecareerresources"}>
           <button type="submit"> College & Career Resources </button>
         </form>
+        <form action={"/mentalhealthresources"}>
+            <button type = "submit"> Mental Health Resources </button>
+        </form>
         <p></p>
       </header>
       <div className="Home-bottom">
