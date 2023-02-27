@@ -15,9 +15,6 @@ const CollegeCareerResources = () => {
                         <a href="https://www.kaptest.com/study/locations/sat/chicago/il/"> Kaplan Study </a>
                         <h3 class = "act-study-guides"> ACT study guides </h3>
                         <a href="https://www.act.org/content/act/en/products-and-services/the-act/test-preparation/free-act-test-prep.html"> ACT Online Prep </a>
-                        <form action={"https://www.khanacademy.org/sat"}>
-                            <button type="submit">{"ACT Prep Courses"}</button>
-                        </form>
                         <h3 class = "scholarships"> College Scholarships </h3>
                         <p> Here are some websites that can guide you to college scholarships: </p>
                         <a href="https://www.scholarships.com"> Scholarships.com </a> <p></p>
