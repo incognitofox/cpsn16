@@ -61,6 +61,14 @@ const Home = () => {
         else if (grade == "12") {
             gradetext = "Senior";
         }
+        
+        var ext = "apps/staff"
+        if (school == "GOODE HS") {
+            ext = "directory"
+        }
+        else if (school == "SPRY HS") {
+            ext = "counseling.html"  // This needs to be changed
+        }
 
         console.log(row)
         return(
@@ -73,8 +81,8 @@ const Home = () => {
                 <form action={`tel:${row['phone']}`}>
                     <button type="submit">{row['phone']}</button>
                 </form>
-                <form action={"/contact"}>
-                    <button type="submit"> Your Counselors </button>
+                <form action={`${row["url"]}${ext}`}>
+                    <button type="submit"> Staff Directory </button>
                 </form>
                 <form action={"/calendar"}>
                     <button type="submit"> Event Calendar </button>
