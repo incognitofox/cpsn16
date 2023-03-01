@@ -5,12 +5,9 @@ const FAQ = () => {
             <h1> Frequently Asked Questions </h1>
             <section class = "faq-container">
                 <div class = "faq-one"> 
-                    <h2 class = "faq-page"> What is an FAQ Page?</h2>
+                    <h2 class = "faq-page"> What is this website for?</h2>
                     <div class = "faq-body"> 
-                        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
-                        necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
-                        aperiam.
-                        Perspiciatis, porro! 
+                        <p> This website is to help CPS Network 16 students find relevant resources in a neat, consolidated format.
                         </p>
                     </div>
                 </div>
@@ -18,9 +15,9 @@ const FAQ = () => {
                 <hr class="hr-line"></hr>
 
                 <div class = "faq-two"> 
-                    <h2 class = "faq-page"> Why do you need a FAQ Page?</h2>
+                    <h2 class = "faq-page"> Where can I find information specific to my school?</h2>
                     <div class = "faq-body"> 
-                        <p> Because Dam Son Demands it!!!
+                        <p> Simply select your school from the dropdown, and your school website and corresponding resources will be right there.
                         </p>
                     </div>
                 </div>
@@ -28,9 +25,9 @@ const FAQ = () => {
                 <hr class="hr-line"></hr>
 
                 <div class = "faq-three"> 
-                    <h2 class = "faq-page"> Do you like the FAQ Page?</h2>
+                    <h2 class = "faq-page"> Who made this project?</h2>
                     <div class = "faq-body"> 
-                        <p> Yes it is Incredible praise be
+                        <p> This is a project created by the UChicago TechTeam, working through the Institute of Poitics to promote social service, in this case your very own CPS Network 16. 
                         </p>
                     </div>
                 </div>
