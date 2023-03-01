@@ -7,24 +7,16 @@ const AcademicResources = () => {
 				<div class = "academicresources-one">
 					<h2 class = "academicresources-page"> Free Online Resources</h2>
 					<div class = "academicresources-body">
-						<p> mimimi 
-						<br /><a href="url">https://www.khanacademy.org/</a> 
+						<p>   
+							<br /><a href="https://www.khanacademy.org/"> Khan Academy - Online Enrichment</a> 
+							<br /><a href="https://www.jstor.org/"> JSTOR - Articles and Primary Sources</a>
+							<br /><a href="https://www.youtube.com/channel/UCtFRv9O2AHqOZjjynzrv-xg"> Overall Learning on Youtube</a>
 						</p>
 					</div>
 				</div>
 
 				<hr class="hr-line"></hr>
-
-				<div class = "academicresources-two">
-					<h2 class = "academicresources-page"> Nearby Events</h2>
-					<div class = "academicresources-body">
-						<p> mimimi
-						</p>
-					</div>
-				</div>
 				
-				<hr class="hr-line"></hr>
-
 				<div class = "academicresources-three">
 					<h2 class = "academicresources-page"> Summer Academic Enrichment Experiences</h2>
 					<div class = "academicresources-body">
