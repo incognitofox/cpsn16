@@ -93,6 +93,9 @@ const Home = () => {
                 <form action ={"/academicresources"}>
                     <button type="submit"> Academic Resources</button>
                 </form>
+                <form action={"/collegecareerresources"}>
+                    <button type="submit"> College & Career Resources </button>
+                </form>
                 <form action ={"/faq"}>
                     <button type="submit"> FAQ</button>
                 </form>
